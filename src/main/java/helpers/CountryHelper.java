@@ -2,7 +2,7 @@ package helpers;
 
 import enums.Countries;
 
-public class CountryHelper implements CountryHelp {
+public class CountryHelper {
 
     public static boolean isLinkContainsCountry(String linkText) {
         for (Countries ct : Countries.values()) {
@@ -16,7 +16,7 @@ public class CountryHelper implements CountryHelp {
 
 
 //    public static void main(String[] args) {
-//        String str = "Great Britain";
+//        String str = "Spain";
 //        boolean isCountryPresent = isLinkContainsCountry(str);
 //    }
 

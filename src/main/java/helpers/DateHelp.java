@@ -5,14 +5,14 @@ import java.util.Locale;
 
 public interface DateHelp {
     static String getRandomDay() {
-        LocalDate randomDate = LocalDate.of(2020, 11, 30);
+        LocalDate randomDate = LocalDate.of(0, 1, 21);
         String month = randomDate.getMonth().toString().toLowerCase(Locale.ROOT);
         int randomDay = randomDate.getDayOfMonth();
         return month + "  " + randomDay;
 
     }
 
-    public static void main(String[] args) {
-        System.out.println(getRandomDay());
-    }
+//    public static void main(String[] args) {
+//        System.out.println(getRandomDay());
+//    }
 }
