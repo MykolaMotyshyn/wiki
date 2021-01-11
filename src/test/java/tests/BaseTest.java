@@ -1,21 +1,18 @@
 package tests;
 
 import driver.DriverInstance;
-import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 
 public class BaseTest {
 
-    protected WebDriver driver;
-
     @BeforeTest
-    public void startBrowser() {
-       driver = DriverInstance.getDriver();
+    public void setup() {
+        DriverInstance.getDriver();
     }
 
     @AfterTest
-    public void browserDead() {
+    public void tearDown() {
         DriverInstance.stopBrowser();
     }
 }
